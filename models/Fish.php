@@ -2,14 +2,12 @@
 
 require_once __DIR__ . '/Products.php';
 
-
-class Cat extends Products{
-  public $toilet;
-  public $sand;
+class Fish extends Products{
+  protected $aquarium;
+  protected $decoration;
   private $image;
 
 
-  
   function __construct($_price, $_categories, $_description, $_image){
     parent::__construct($_price, $_categories, $_description);
     $this->setImage($_image);
@@ -22,5 +20,4 @@ class Cat extends Products{
   public function getImage(){
     return $this->image;
   }
-  
 }
