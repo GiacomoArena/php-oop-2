@@ -8,8 +8,8 @@ class Dog extends Products{
   private $image;
 
 
-  function __construct($_price, $_categories, $_description, $_image){
-    parent::__construct($_price, $_categories, $_description);
+  function __construct($_description, $_price, $_categories,  $_image){
+    parent::__construct($_description, $_price, $_categories, );
     $this->setImage($_image);
   }
 

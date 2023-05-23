@@ -12,7 +12,7 @@
     
 
 
-    public function __construct($_price, $_categories, $_description){
+    public function __construct($_description, $_price, $_categories ){
       $this-> price = $_price;
       $this-> categories = $_categories;
       $this-> description = $_description;
@@ -30,7 +30,7 @@
 
 
     public function getPrice(){
-        return $this->price; 
+        return 'Prezzo: ' . $this->price; 
     }
     public function getCategories(){
         return $this->categories; 
